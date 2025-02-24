@@ -1,0 +1,8 @@
+*{
+  margin: 0 !important;
+  padding: 0;
+}
+.login_area{
+  height: 400px;
+  width: 400px;
+}
