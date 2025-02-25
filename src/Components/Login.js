@@ -9,9 +9,12 @@ const Login = () => {
 
   const handleLogin=async(e)=>{
     e.preventDefault()
-   // navigate('/dashboard')
     let res=await axios.post('http://localhost:9000/login/',LoginData)
     console.log(res);
+    if(res.data=='auth'){
+     navigate('/dashboard')
+
+    }
     
   }
   const handleChange=(e)=>{
